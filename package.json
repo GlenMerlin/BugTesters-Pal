@@ -1,0 +1,14 @@
+{
+  "name": "BugTestPal",
+  "version": "1.0A",
+  "description": "WIP",
+  "main": "BugTestPal.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "GlenMerlin",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^11.5.0"
+  }
+}
