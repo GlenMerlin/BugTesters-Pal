@@ -6,8 +6,8 @@ const snekfetch = require('snekfetch');
 
 bot.once('ready', () => {
 	console.log('Your bug testing pal is starting up')
-  bot.user.setActivity("Ready for testing | !help");
-  console.log('Ready for Action!')
+  	bot.user.setActivity("Ready for testing | !help");
+  	console.log('Ready for Action!')
 });
 
 bot.on("message", async message => {
@@ -84,7 +84,7 @@ bot.on("message", async message => {
 	}
 	if (command === 'lag'){
 		const m = await message.channel.send("Checking Ping");
-    m.edit(`Pong! Latency is ${m.createdTimestamp - message.createdTimestamp}ms. API Latency is ${Math.round(client.ping)}ms`);
+    	m.edit(`Pong! Latency is ${m.createdTimestamp - message.createdTimestamp}ms. API Latency is ${Math.round(bot.ws.ping)}ms`);
 	}
   if (command === 'help') {
     const helpEmbed = new Discord.RichEmbed()
